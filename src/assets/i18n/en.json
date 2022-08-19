@@ -1,0 +1,16 @@
+{
+  "content": {
+    "first": "Mathematics",
+    "second": "Computer Science",
+    "third": "Programming"
+  },
+  "nav": {
+    "firstLink": "Mathematics",
+    "secondLink": "Computer Science",
+    "thirdLink": "Programming"
+  },
+  "math": {
+    "header": "Foundations of mathematics",
+    "intro": "Foundations of mathematics is the study of the philosophical and logical[1] and/or algorithmic basis of mathematics, or, in a broader sense, the mathematical investigation of what underlies the philosophical theories concerning the nature of mathematics.[2] In this latter sense, the distinction between foundations of mathematics and philosophy of mathematics turns out to be quite vague. Foundations of mathematics can be conceived as the study of the basic mathematical concepts (set, function, geometrical figure, number, etc.) and how they form hierarchies of more complex structures and concepts, especially the fundamentally important structures that form the language of mathematics (formulas, theories and their models giving a meaning to formulas, definitions, proofs, algorithms, etc.) also called metamathematical concepts, with an eye to the philosophical aspects and the unity of mathematics. The search for foundations of mathematics is a central question of the philosophy of mathematics; the abstract nature of mathematical objects presents special philosophical challenges.\n\nThe foundations of mathematics as a whole does not aim to contain the foundations of every mathematical topic. Generally, the foundations of a field of study refers to a more-or-less systematic analysis of its most basic or fundamental concepts, its conceptual unity and its natural ordering or hierarchy of concepts, which may help to connect it with the rest of human knowledge. The development, emergence, and clarification of the foundations can come late in the history of a field, and might not be viewed by everyone as its most interesting part. "
+  }
+}

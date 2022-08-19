@@ -1,0 +1,62 @@
+<div class="container">
+  <h2>Informatik</h2>
+  <p>
+    Die theoretische Informatik beschäftigt sich mit der Abstraktion, Modellbildung und grundlegenden Fragestellungen,
+    die mit der Struktur, Verarbeitung, Übertragung und Wiedergabe von Informationen in Zusammenhang stehen. Ihre
+    Inhalte sind Automatentheorie, Theorie der formalen Sprachen, Berechenbarkeits- und Komplexitätstheorie, aber auch
+    Logik und formale Semantik sowie die Informations-, Algorithmen- und Datenbanktheorie.
+
+    Die theoretische Informatik wurde – von den Befürwortern dieser Wissenschaftskategorie – in die
+    Strukturwissenschaften eingeordnet und bietet Grundlagen für die Definition, Verifikation und Ausführung der
+    Programme von Programmiersprachen, den Bau der Compiler von Programmiersprachen – den Compilerbau – und die
+    mathematische Formalisierung und Untersuchung von meist diskreten Problemstellungen und deren Modellen. Mit Hilfe
+    mathematischer Abstraktion der Eigenschaften von gewonnenen Modellen ergaben sich nützliche Definitionen, Sätze,
+    Beweise, Algorithmen, Anwendungen und Lösungen von bzw. zu Problemen. Die theoretische Informatik bildet mit ihren
+    zeitlosen, mathematischen Wahrheiten und Methoden ein formales Skelett, das die Informatik in der Praxis mit
+    konkreten Implementierungen durchdringt. Die theoretische Informatik identifizierte viele unlösbare
+    Problemstellungen mittels der Berechenbarkeitstheorie und erlaubt, häufig mit konstruktiver Beweisführung der
+    Komplexitätstheorie, die Abgrenzung der praktisch effizient lösbaren Probleme von denen, für die das Gegenteil gilt.
+
+    Zu den konstruktiven Methoden der theoretischen Informatik zählt auch das Entwerfen von formalen Systemen,
+    Automaten, Graphen und Syntaxdiagrammen sowie das Festlegen von Grammatiken und Semantiken, um eine Problemstellung
+    mit mathematischen Ausdrücken formal zu fassen und von der informellen Ebene abzuheben. Die Konstrukte beschreiben
+    so die innere Logik eines Problems mit mathematisch-logischen Aussagen, was im Weiteren eine formale Untersuchung
+    erlaubt und potenziell neue – durch Beweise gestützte – Aussagen und Algorithmen der formalen Modelle als Resultate
+    erschließbar macht. Neben dem mathematischen Erkenntnisgewinn lassen sich manche der gefundenen Lösungen praktisch
+    implementieren, um Menschen durch Maschinensemantik automatisierte Vorteile der Mathematik- und Computer-Nutzung zu
+    verschaffen.
+  </p>
+</div>
+
+<div class="video-player-wrapper">
+  <vg-player>
+    <vg-overlay-play></vg-overlay-play>
+    <vg-buffering></vg-buffering>
+    <vg-scrub-bar>
+      <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+      <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+    </vg-scrub-bar>
+    <vg-controls>
+      <vg-play-pause></vg-play-pause>
+      <vg-playback-button></vg-playback-button>
+      <vg-time-display vgFormat="mm:ss" vgProperty="current"></vg-time-display>
+      <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
+      <vg-time-display vgFormat="mm:ss" vgProperty="left"></vg-time-display>
+      <vg-time-display vgFormat="mm:ss" vgProperty="total"></vg-time-display>
+      <vg-track-selector></vg-track-selector>
+      <vg-mute></vg-mute>
+      <vg-volume></vg-volume>
+      <vg-fullscreen></vg-fullscreen>
+    </vg-controls>
+    <video #media [vgMedia]="$any(media)" crossorigin id="singleVideo" preload="auto">
+      <source src="http://static.videogular.com/assets/videos/videogular.mp4" type="video/mp4">
+      <source src="http://static.videogular.com/assets/videos/videogular.ogg" type="video/ogg">
+      <source src="http://static.videogular.com/assets/videos/videogular.webm" type="video/webm">
+      <track default kind="subtitles" label="English"
+             src="http://static.videogular.com/assets/subs/pale-blue-dot.vtt" srclang="en">
+      <track kind="subtitles" label="Deutsch" src="http://static.videogular.com/assets/subs/pale-blue-dot.vtt"
+             srclang="de">
+    </video>
+  </vg-player>
+</div>
+

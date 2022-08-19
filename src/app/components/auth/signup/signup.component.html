@@ -1,0 +1,33 @@
+<div>
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+
+
+  <form #signupForm="ngForm" (submit)="onSignup(signupForm)" *ngIf="!isLoading">
+
+    <mat-form-field>
+      <input #emailInput="ngModel" [(ngModel)]='checkEmail' email matInput name="email" ngModel placeholder="E-Mail"
+             required type="email">
+      <mat-error *ngIf="emailInput.invalid">Please enter a valid email.</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input #passwordInput="ngModel" [pattern]="passwordPattern" matInput name="password" ngModel
+             placeholder="Password"
+             required type="password">
+
+      <mat-error *ngIf="passwordInput.invalid || passwordInput.errors?.['pattern']">Password is not valid or must
+        include Minimum 12 characters, at least one uppercase letter, one lowercase letter, one number and one special
+        character
+      </mat-error>
+
+    </mat-form-field>
+
+    <button *ngIf="!isLoading" [disabled]="signupForm.invalid" color="accent" mat-dialog-close mat-raised-button
+            type="submit">Sign Up
+    </button>
+
+    <p (click)="openLogin()"> You are already registered? Than Login!</p>
+  </form>
+  
+</div>
+

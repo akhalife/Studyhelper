@@ -1,0 +1,42 @@
+<mat-toolbar class="text-white mat-elevation-z8">
+  <button (click)="snav.toggle()" mat-icon-button>
+    <mat-icon *ngIf="!snav.opened"> menu</mat-icon>
+    <mat-icon *ngIf="snav.opened"> close</mat-icon>
+  </button>
+  <h1>{{ titleService.getTitle() }}</h1>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #snav
+               [fixedTopGap]="(isExtraScreenSmall | async) ? 92 : 56"
+               [mode]="(isScreenSmall | async) ? 'over' : 'side'"
+               [opened]="(isScreenSmall | async) === false">
+    <div class="viewer-nav">
+      <div class="viewer-nav-content">
+        <mat-nav-list>
+          <a mat-list-item
+             routerLink="/informatics"
+             routerLinkActive="active-link">Overview</a>
+          <a mat-list-item
+             routerLink="/informatics/aussagenlogik"
+             routerLinkActive="active-link">Aussagenlogik</a>
+          <a mat-list-item
+             routerLink="/informatics/endliche-automaten"
+             routerLinkActive="active-link">Endliche-Automaten</a>
+          <a mat-list-item
+             routerLink="/informatics/praedikatenlogik"
+             routerLinkActive="active-link">Praedikatenlogik</a>
+          <a mat-list-item
+             routerLink="/informatics/unix"
+             routerLinkActive="active-link">Unix</a>
+        </mat-nav-list>
+      </div>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <main class="docs-component-sidenav-body-content">
+      <router-outlet></router-outlet>
+    </main>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>

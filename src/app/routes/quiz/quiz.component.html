@@ -1,0 +1,44 @@
+<div class="container">
+  <div *ngIf="prevAnswered.length < 11">
+    <p class="text-center">{{ prevAnswered.length }} of {{ quizzes.length }}</p>
+    <h1>{{ quizzes[currentQuiz].question }}</h1>
+
+    <div class="answers">
+      <ul
+        *ngFor="let quiz of quizzes[currentQuiz].answer"
+        class="answers__list">
+        <label>
+          <li
+            @answer
+            [correctAnswer]="quiz.correct"
+            appBackground
+            class="answers__item">
+            <input
+              (change)="onAnswer(quiz.correct)"
+              [disabled]="answerSelected"
+              name="options"
+              type="radio"/>
+            {{ quiz.option }}
+          </li>
+        </label>
+      </ul>
+    </div>
+  </div>
+
+  <div *ngIf="prevAnswered.length > 10">
+    <button (click)="showResult()" mat-raised-button
+            *ngIf="resultStatus === 'Show Result'"
+            mat-button>
+      {{ resultStatus }}
+    </button>
+    <button (click)="playAgain()" mat-raised-button
+            *ngIf="resultStatus !== 'Show Result'"
+            mat-button>
+      {{ resultStatus }}
+    </button>
+    <div *ngIf="result">
+      <p>Correct Answers: {{ correctAnswers }} | Inocrrect Answers:
+        {{ incorrectAnswers }}</p>
+    </div>
+  </div>
+</div>

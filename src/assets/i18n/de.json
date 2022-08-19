@@ -1,0 +1,16 @@
+{
+  "content": {
+    "first": "Mathematik",
+    "second": "Informatik",
+    "third": "Programmierung"
+  },
+  "nav": {
+    "firstLink": "Mathematik",
+    "secondLink": "Informatik",
+    "thirdLink": "Programmierung"
+  },
+  "math": {
+    "header": "Grundlagen der Mathematik",
+    "intro": "Die Grundlagen der Mathematik sind einerseits Teil der Mathematik, andererseits bilden sie einen wichtigen Gegenstand erkenntnistheoretischer Reflexion, wenn diese sich mit den allgemeinen Grundlagen der menschlichen Erkenntnisgewinnung befasst. Insofern solche mathematikphilosophischen Reflexionen in der Geschichte mehrfach Einfluss auf die Formulierung der Grundlagen der Mathematik genommen haben, sind diese nicht ausschließlich Teil der Mathematik, sondern liegen in einem Überschneidungsgebiet mit der Philosophie.Geht man – wie bis in die Neuzeit hinein üblich – von einer Unterteilung der Mathematik in Arithmetik und Geometrie aus, so kann man die \"Grundlagenfrage\" stellen, ob die beiden Teile voneinander unabhängige Erkenntnisbereiche sind oder ob einer von beiden der grundlegendere ist, auf den sich der andere zurückführen lässt. n der Mathematik der Antike bis zu den Griechen führte die höhere Anschaulichkeit der Geometrie dazu, dass viele arithmetische Probleme auf geometrischer Grundlage gelöst wurden. So fanden etwa die Pythagoreer um 500 v. Chr. Gesetzmäßigkeiten von Quadratzahlen heraus, indem sie kleine Steinchen („Psephoi“) zu Quadraten legten und die Unterschiede der so entstehenden Quadrate betrachteten.  "
+  }
+}

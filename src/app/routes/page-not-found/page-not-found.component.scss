@@ -1,0 +1,27 @@
+$vertical-spacing: 64px;
+$horizontal-spacing: 32px;
+
+main {
+  min-height: 100vh;
+  font-size: 1.25rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $vertical-spacing;
+}
+
+
+a {
+  margin-left: 16px;
+}
+
+@media (max-width: 720px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+
