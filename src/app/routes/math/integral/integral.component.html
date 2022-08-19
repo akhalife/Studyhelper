@@ -1,0 +1,67 @@
+<div class="container">
+  <h2>Integrale</h2>
+  <p>
+    Die Integralrechnung ist ein Zweig der Infinitesimalrechnung und bildet mit der Differentialrechnung die
+    mathematische Analysis. Sie ist aus der Aufgabe entstanden, Flächeninhalte oder Volumina zu berechnen, die durch
+    gekrümmte Linien bzw. Flächen begrenzt sind. Unter dem Oberbegriff Integral werden das unbestimmte und das bestimmte
+    Integral einer Funktion zusammengefasst. Die Berechnung von Integralen heißt Integration.
+
+    Das bestimmte Integral einer Funktion f ergibt eine Zahl. Ist f eine reelle Funktion einer reellen Variablen x, die
+    im xy-Koordinatensystem in einem Intervall von a ≤ x ≤ b durch einen Graphen dargestellt ist, dann gibt das
+    bestimmte Integral den Inhalt der Fläche an, die in diesem Intervall zwischen dem Graphen und der x-Achse liegt. a
+    und b werden als Integrationsgrenzen bezeichnet. Falls Flächenstücke unterhalb der x-Achse vorkommen, werden diese
+    hierbei negativ gezählt. Diese Vorzeichenkonvention wird gewählt, damit das bestimmte Integral eine lineare
+    Abbildung vom Raum der Funktionen in den Zahlenraum ist, was sowohl für theoretische Überlegungen als auch für
+    konkrete Berechnungen eine zentrale Eigenschaft des Integralbegriffs darstellt. Auch wird so sichergestellt, dass
+    der Hauptsatz der Differential- und Integralrechnung gilt.
+
+    Das unbestimmte Integral einer Funktion f ist eine Funktion F, deren erste Ableitung gerade die ursprüngliche
+    Funktion f ist. F wird als Stammfunktion der Funktion f bezeichnet. Addiert oder subtrahiert man zu F eine beliebige
+    Zahl, erhält man wieder eine Stammfunktion von f. Der Hauptsatz der Differential- und Integralrechnung gibt Auskunft
+    darüber, wie aus unbestimmten Integralen bestimmte Integrale berechnet werden können.
+  </p>
+</div>
+
+<div class="video-player-wrapper">
+  <vg-player>
+    <vg-overlay-play></vg-overlay-play>
+    <vg-buffering></vg-buffering>
+    <vg-scrub-bar>
+      <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+      <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+    </vg-scrub-bar>
+    <vg-controls>
+      <vg-play-pause></vg-play-pause>
+      <vg-playback-button></vg-playback-button>
+      <vg-time-display vgFormat="mm:ss" vgProperty="current"></vg-time-display>
+      <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
+      <vg-time-display vgFormat="mm:ss" vgProperty="left"></vg-time-display>
+      <vg-time-display vgFormat="mm:ss" vgProperty="total"></vg-time-display>
+      <vg-track-selector></vg-track-selector>
+      <vg-mute></vg-mute>
+      <vg-volume></vg-volume>
+      <vg-fullscreen></vg-fullscreen>
+    </vg-controls>
+    <video #media [vgMedia]="$any(media)" crossorigin id="singleVideo" preload="auto">
+      <source src="http://static.videogular.com/assets/videos/videogular.mp4" type="video/mp4">
+      <source src="http://static.videogular.com/assets/videos/videogular.ogg" type="video/ogg">
+      <source src="http://static.videogular.com/assets/videos/videogular.webm" type="video/webm">
+      <track default kind="subtitles" label="English"
+             src="http://static.videogular.com/assets/subs/pale-blue-dot.vtt" srclang="en">
+      <track kind="subtitles" label="Deutsch" src="http://static.videogular.com/assets/subs/pale-blue-dot.vtt"
+             srclang="de">
+    </video>
+  </vg-player>
+</div>
+
+
+<div class="container">
+  <div class="quizbutton">
+    <button color="primary" mat-raised-button routerLink="/quiz">
+      Zum Quiz
+    </button>
+  </div>
+</div>
+
+
+

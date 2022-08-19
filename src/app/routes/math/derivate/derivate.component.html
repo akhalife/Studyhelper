@@ -1,0 +1,60 @@
+<div class="container">
+  <h2>Ableitungen</h2>
+  <p>
+    Die Differential- oder Differenzialrechnung ist ein wesentlicher Bestandteil der Analysis und damit ein Gebiet der
+    Mathematik. Zentrales Thema der Differentialrechnung ist die Berechnung lokaler Veränderungen von Funktionen.
+    Während eine Funktion ihren Eingabewerten nach tabellarischem Prinzip gewisse Ausgangswerte zuordnet, wird durch die
+    Differentialrechnung ermittelt, wie stark sich die Ausgabewerte nach sehr kleinen Veränderungen der Eingabewerte
+    ändern. Sie ist eng verwandt mit der Integralrechnung, mit der sie gemeinsam unter der Bezeichnung
+    Infinitesimalrechnung zusammengefasst wird.
+
+    Die Ableitung einer Funktion dient der Untersuchung lokaler Veränderungen einer Funktion und ist gleichzeitig
+    Grundbegriff der Differentialrechnung. Anstatt von der Ableitung spricht man auch vom Differentialquotienten, dessen
+    geometrische Entsprechung die Tangentensteigung ist. Die Ableitung ist nach der Vorstellung von Leibniz der
+    Proportionalitätsfaktor zwischen infinitesimalen Änderungen des Eingabewertes und den daraus resultierenden,
+    ebenfalls infinitesimalen Änderungen des Funktionswertes.
+  </p>
+</div>
+
+<div class="video-player-wrapper">
+  <vg-player>
+    <vg-overlay-play></vg-overlay-play>
+    <vg-buffering></vg-buffering>
+    <vg-scrub-bar>
+      <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+      <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+    </vg-scrub-bar>
+    <vg-controls>
+      <vg-play-pause></vg-play-pause>
+      <vg-playback-button></vg-playback-button>
+      <vg-time-display vgFormat="mm:ss" vgProperty="current"></vg-time-display>
+      <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
+      <vg-time-display vgFormat="mm:ss" vgProperty="left"></vg-time-display>
+      <vg-time-display vgFormat="mm:ss" vgProperty="total"></vg-time-display>
+      <vg-track-selector></vg-track-selector>
+      <vg-mute></vg-mute>
+      <vg-volume></vg-volume>
+      <vg-fullscreen></vg-fullscreen>
+    </vg-controls>
+    <video #media [vgMedia]="$any(media)" crossorigin id="singleVideo" preload="auto">
+      <source src="http://static.videogular.com/assets/videos/videogular.mp4" type="video/mp4">
+      <source src="http://static.videogular.com/assets/videos/videogular.ogg" type="video/ogg">
+      <source src="http://static.videogular.com/assets/videos/videogular.webm" type="video/webm">
+      <track default kind="subtitles" label="English"
+             src="http://static.videogular.com/assets/subs/pale-blue-dot.vtt" srclang="en">
+      <track kind="subtitles" label="Deutsch" src="http://static.videogular.com/assets/subs/pale-blue-dot.vtt"
+             srclang="de">
+    </video>
+  </vg-player>
+</div>
+
+
+<div class="container">
+  <div class="quizbutton">
+    <button color="primary" mat-raised-button routerLink="/quiz">
+      Zum Quiz
+    </button>
+  </div>
+</div>
+
+

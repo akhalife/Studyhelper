@@ -1,0 +1,138 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 50%;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+
+.nav-items-right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  white-space: nowrap;
+}
+
+.nav-items-left {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.bg {
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876);
+}
+
+.mat-toolbar {
+  background: none;
+}
+
+.mat-list-item {
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+}
+
+.active-link {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.docs-navbar-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 8px 16px;
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876);
+
+  > .mat-button {
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+}
+
+.flex-spacer {
+  flex-grow: 1;
+}
+
+.docs-angular-logo {
+  height: 26px;
+  margin: 0 4px 3px 0;
+  vertical-align: middle;
+}
+
+.docs-github-logo {
+  height: 21px;
+  margin: 0 7px 2px 0;
+  vertical-align: middle;
+}
+
+.docs-navbar-link {
+  text-decoration: inherit;
+  flex: 1;
+}
+
+.docs-navbar {
+  display: none;
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876);
+}
+
+.docs-navbar-show-small {
+  display: none;
+  background: -webkit-linear-gradient(to right, #4e4376, #2b5876); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4e4376, #2b5876);
+}
+
+.skip-link-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+/**
+  * Rules for when the device is detected to be a small screen.
+  * Moves content two rows instead of one.
+  */
+@media (max-width: 720px) {
+  .docs-navbar-hide-small {
+    display: none;
+  }
+
+  .docs-navbar-show-small {
+    display: block;
+  }
+
+  .docs-navbar {
+    display: flex;
+  }
+
+  .docs-navbar--github-logo {
+    margin: 0;
+  }
+}

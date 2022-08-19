@@ -1,0 +1,52 @@
+<div class="container">
+  <h2>Endliche-Automaten</h2>
+  <p>
+    Die Aussagenlogik ist ein Teilgebiet der Logik, das sich mit Aussagen und deren Verknüpfung durch Junktoren befasst,
+    ausgehend von strukturlosen Elementaraussagen (Atomen), denen ein Wahrheitswert zugeordnet wird. In der klassischen
+    Aussagenlogik wird jeder Aussage ein Element einer Booleschen Algebra als Wahrheitswert zugeordnet. Der
+    Wahrheitswert einer zusammengesetzten Aussage lässt sich ohne zusätzliche Informationen mittels der Operationen der
+    Booleschen Algebra aus den Wahrheitswerten ihrer Teilaussagen bestimmen.
+  </p>
+</div>
+
+<div class="video-player-wrapper">
+  <vg-player>
+    <vg-overlay-play></vg-overlay-play>
+    <vg-buffering></vg-buffering>
+    <vg-scrub-bar>
+      <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+      <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+    </vg-scrub-bar>
+    <vg-controls>
+      <vg-play-pause></vg-play-pause>
+      <vg-playback-button></vg-playback-button>
+      <vg-time-display vgFormat="mm:ss" vgProperty="current"></vg-time-display>
+      <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
+      <vg-time-display vgFormat="mm:ss" vgProperty="left"></vg-time-display>
+      <vg-time-display vgFormat="mm:ss" vgProperty="total"></vg-time-display>
+      <vg-track-selector></vg-track-selector>
+      <vg-mute></vg-mute>
+      <vg-volume></vg-volume>
+      <vg-fullscreen></vg-fullscreen>
+    </vg-controls>
+    <video #media [vgMedia]="$any(media)" crossorigin id="singleVideo" preload="auto">
+      <source src="http://static.videogular.com/assets/videos/videogular.mp4" type="video/mp4">
+      <source src="http://static.videogular.com/assets/videos/videogular.ogg" type="video/ogg">
+      <source src="http://static.videogular.com/assets/videos/videogular.webm" type="video/webm">
+      <track default kind="subtitles" label="English"
+             src="http://static.videogular.com/assets/subs/pale-blue-dot.vtt" srclang="en">
+      <track kind="subtitles" label="Deutsch" src="http://static.videogular.com/assets/subs/pale-blue-dot.vtt"
+             srclang="de">
+    </video>
+  </vg-player>
+</div>
+
+
+<div class="container">
+  <div class="quizbutton">
+    <button color="primary" mat-raised-button routerLink="/quiz">
+      Zum Quiz
+    </button>
+  </div>
+</div>
+
